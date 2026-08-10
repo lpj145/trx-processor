@@ -1,6 +1,9 @@
-# High-Performance Transaction Processor (`trx-processor`)
+# High-Performance Transaction Processor
 
-A fast, memory-efficient transaction processing engine written in Rust. It handles deposit, withdrawal, dispute, resolution, and chargeback operations while generating accurate client account balances.
+Every project until the mvp's like this I like to ask myself, what is sufficient for this? every single time that I handle or manage a new project I fight challenging trade-ofs
+like it should fast? should be parallel? if so the active source inputs will be passive or actively sending data? I should use thread per core approach or epoll with sync + lock's will resolve that? damm it it always have a lot to question.
+
+So I take some statement's on that: It should be correct, simple to read and efficient. It handles deposit, withdrawal, dispute, resolution, and chargeback operations while generating accurate client account balances, this is all.
 
 ---
 
@@ -115,3 +118,6 @@ cargo test
 ```bash
 cargo run --bin gen_transactions transactions.csv
 ```
+
+I put some efforts on this, just to show my abilities to make things concurrently even without tokio, but I could use tokio too which I use in my day to day
+for a long ago.
