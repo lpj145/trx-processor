@@ -85,6 +85,9 @@ The engine handles all transaction types and state transitions:
 
 ---
 
+## LLM use
+I have a relation of hate/love with llm's but as you can see on [agy cli history](./agy_history.md) I ask for some adjustments on the code and for fast inferences and quickly answer's I like to put a lot of structured boilerplate code and some explanations and it fulfill the rest in a blink of eye.
+
 ## Building & Running
 
 ### Build Project
