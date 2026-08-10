@@ -1,0 +1,56 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug executable 'gen_transactions'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "run",
+                    "--bin=gen_transactions",
+                ]
+            },
+            "args": []
+        },
+        {
+            "name": "Debug unit tests in executable 'gen_transactions'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--bin=gen_transactions"
+                ]
+            }
+        },
+        {
+            "name": "Debug executable 'trx-processor'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "run",
+                    "--bin=trx-processor",
+                    "--",
+                    "transactions.csv"
+                ]
+            },
+            "args": []
+        },
+        {
+            "name": "Debug unit tests in executable 'trx-processor'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--bin=trx-processor"
+                ]
+            }
+        }
+    ]
+}
