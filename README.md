@@ -41,7 +41,7 @@ Benchmarked on **208,252 generated transaction records**:
 | **Serde CSV Engine** | ~916 ms | Baseline |
 | **Aho-Corasick Engine** | **~535 ms** | 100% Identical |
 
-> **Result**: The Aho-Corasick zero-copy engine delivers **~1.7x faster throughput** while producing identical account balances.
+> **Result**: The Aho-Corasick zero-copy engine delivers **~1.7x faster throughput** while producing identical account balances, uses --elapsed to see time.
 
 ---
 
@@ -86,9 +86,6 @@ The engine handles all transaction types and state transitions:
 ---
 
 ## Building & Running
-
-### Prerequisites
-- Rust 1.80+ (2024 Edition)
 
 ### Build Project
 ```bash
